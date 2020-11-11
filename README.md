@@ -17,7 +17,7 @@ It is an app that allows the user to find a certain meal and the restaurant that
  - As a user I can see other feedback.
 
 
-### Technology
+# Technology
 
 * Front-End : React 
 * Back-End : nodejs ,express, express route.
@@ -27,7 +27,7 @@ It is an app that allows the user to find a certain meal and the restaurant that
 * Design : Material UI
 
 
-# Team:
+# Team
 
  - [Hala](https://github.com/shaima96/) 
  - [Kholoud](https://github.com/kholoudmohtaseb)
