@@ -27,6 +27,11 @@ It is an app that allows the user to find a certain meal and the restaurant that
 * Design : Material UI
 
 
+# DataBase Schema
+
+![food](https://user-images.githubusercontent.com/37650536/98810573-1dab7600-2428-11eb-9aed-019a91922166.png)
+
+
 # Team
 
  - [Hala](https://github.com/shaima96/) 
