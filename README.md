@@ -11,10 +11,7 @@ It is an app that allows the user to find a certain meal and the restaurant that
  - As a user I select food.
  - As a user I can see all the restaurants that offer the selected food  and      I can choose one of them.
  - As a user I can see the whole details about the selected restaurant.
- - As a user I can put the food in my favorite list.
- - As a user I can put the restaurant  in my favorite list.
- - As a user I can add rate with feedback.
- - As a user I can see other feedback.
+ 
 
 
 # Technology
@@ -25,6 +22,17 @@ It is an app that allows the user to find a certain meal and the restaurant that
 * Deployment : Heroku 
 * Authentication : JWT
 * Design : Material UI
+
+
+# DataBase Schema
+
+![food (1)](https://user-images.githubusercontent.com/37650536/98821052-ae3d8280-2437-11eb-8ac9-af8a23bff88f.png)
+
+
+# Structure
+
+
+# How to run your project
 
 
 # Team
