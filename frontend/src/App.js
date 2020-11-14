@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios'
+import  './App.css'
 
 class App extends Component {
     constructor() {
         super();
         this.state = {
-            UserID: '',
             UserName: '',
             Password: '',
             Email: ''
@@ -54,7 +54,7 @@ class App extends Component {
                             <input type='text' placeholder='User Name' onChange={this.changeUserName} value={this.state.UserName} className='form-control form-group' />
                             <input type='password' placeholder='Password' onChange={this.changePassword} value={this.state.Password} className='form-control form-group' />
                             <input type='text' placeholder='Email' onChange={this.changeEmail} value={this.state.Email} className='form-control form-group' />
-                            <input type='submit' className='btn btn-danger btn-block' value='Submit' />
+                            <input type='submit' className='btn btn-danger btn-block' id="btn" value='Submit' />
                         </form>
                     </div>
 
