@@ -15,7 +15,7 @@ app.use(express.static(__dirname+'/../frontend/build'))
 
 app.get('/', (req,res) => {
    
-    res.json({mess :"welcome welcome"})
+    res.json({message :"welcome in our app"})
     
   })
 app.use('/fooddose',routers)

@@ -1,13 +1,15 @@
 const express = require('express');
 const routers = express.Router();
-const userSchema = require('./modules/SignUpModule.js')
+const userSchema = require('./modules/SignUpModule.js');
+// const login = require('./controllers/logIn')
+
 
 
 routers.get('/', function (req, res, next) {
-    res.send('Helllllllllo');
+    res.send('hello world ');
 });
 
-
+// SignUP rout / post data 
 routers.post('/signup', (req, res) => {
     const signedUpUser = new userSchema({
         UserID: req.body.UserID,
@@ -22,5 +24,20 @@ routers.post('/signup', (req, res) => {
             res.json(err)
         })
 })
+
+
+//LogIn route 
+routers.post('/login', (req, res) => {
+    const { Email, Password } = req.body;
+    userSchema.findOne({
+        where: { Email, Password },
+
+    })
+
+        .then((data) => res.status(200).send(data))
+        .catch((err) => res.status(404).send(err, "error"));
+
+})
+
 
 module.exports = routers;
