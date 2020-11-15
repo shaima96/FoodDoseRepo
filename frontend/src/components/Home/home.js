@@ -1,7 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
-import { useHistory } from "react-router-dom";
 import fastfood from "./fastfood.png"
 import healthyfood from "./healthyfood.png"
 import bakries from "./bakries.png"
@@ -13,31 +11,12 @@ import salad from "./salad.png"
 import seafood from "./seafood.png"
 import traditional from "./traditional.png"
 import './home.css'
-import { styled } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-
-const Login = styled(Button)({
-    background: '#F69624',
-    border: 0,
-    borderRadius: 30,
-    color: 'white',
-    height: 48,
-    padding: '0 30px',
-});
+import Header from '../Header/header.js'
+import Footer from '../Footer/footer.js'
 function Home() {
-    let history = useHistory();
     return (
         <div class='container'>
-            <AppBar position="static" class='appbar'>
-                <Toolbar>
-                    <Typography variant="h6" id="fooddose">
-                        FoodDose
-                    </Typography>
-                    <Login onClick={() => {
-                        history.push('/login')
-                    }} id="login">LogIn</Login>
-                </Toolbar>
-            </AppBar>
+           <Header/>
             <table align="center">
                 <tr>
                     <td><img src={fastfood} alt="img" class="img" /></td>
@@ -69,6 +48,7 @@ function Home() {
                     <th class="text-center">Sea Food </th>
                 </tr>
             </table>
+            <Footer/>
         </div>
     );
 }

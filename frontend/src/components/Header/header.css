@@ -1,0 +1,11 @@
+#login{
+    float: right;
+    margin-left: 80%;
+    margin-top: -2%;
+    font-weight: bold;
+    font-family: "Ubuntu";
+
+}
+.header{
+    display:inline;
+}
