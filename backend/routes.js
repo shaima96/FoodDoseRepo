@@ -28,6 +28,7 @@ routers.post('/signup', (req, res) => {
 
 //LogIn route 
 routers.post('/login', (req, res) => {
+    // console.log('login worked')
     const { Email, Password } = req.body;
     userSchema.findOne({
         where: { Email, Password },

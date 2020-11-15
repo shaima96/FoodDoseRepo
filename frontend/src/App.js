@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
-// import { BrowserRouter as Router, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import Login from '../src/components/LogIn/LogIn.js'
 import SignUp from '../src/components/Signup/signUp.js';
-
-
+import Home from '../src/components/Home/home.js';
+import Footer from '../src/components/Footer/footer.js';
+import Header from '../src/components/Header/header.js'
 class App extends Component {
-    constructor() {
-        super();
-
-    }
-
     render() {
         return (
-            <div>
-                <SignUp />
+            <div className="App">
+                <Router>
+                <Header/>
+                    <Route path="/" exact component={() => <Home />} />
+                    <Route path="/login" exact component={() => <Login />} />
+                    <Route path="/signup" exact component={() => <SignUp />} />
+                    <Footer />
+                </Router>
             </div>
         );
     }
