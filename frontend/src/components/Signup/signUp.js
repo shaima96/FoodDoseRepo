@@ -4,8 +4,10 @@ import axios from 'axios';
 import Button from "@material-ui/core/Button";
 import FormControl from "@material-ui/core/FormControl";
 import Footer from '../Footer/footer.js';
+import Header from '../Header/header.js'
 import { TextField, Typography } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+
 
 
 import './signUp.css'
@@ -70,6 +72,7 @@ class SignUp extends Component {
 
         return (
             <div >
+                <Header/>
                 <Typography component="h1" variant="h3" align="center" id="title"> Signup</Typography><br />
                 <Box display="flex" justifyContent="center" alignItems="center" minHeight="50vh">
 
