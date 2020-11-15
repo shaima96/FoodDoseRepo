@@ -1,0 +1,32 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F69624;
+    color: black;
+    text-align: center;
+  }
+  .container1{
+    position:absolute; 
+    left:51px; 
+    top:20px;
+    
+  }
+  .container1 p {
+    display: inline;
+  }
+  .container2{
+    position:absolute; 
+    left:51px; 
+    top:46px;
+  }
+  .container2 p {
+    display: inline;
+    left:108px; 
+  }
+  .container3{
+    position:absolute; 
+    left:1383px; 
+    top:20px; 
+  }
