@@ -11,12 +11,11 @@ import salad from "./salad.png"
 import seafood from "./seafood.png"
 import traditional from "./traditional.png"
 import './home.css'
-import Header from '../Header/header.js'
-import Footer from '../Footer/footer.js'
+// import Header from '../Header/header.js'
 function Home() {
     return (
         <div class='container'>
-           <Header/>
+           {/* <Header/> */}
             <table align="center">
                 <tr>
                     <td><img src={fastfood} alt="img" class="img" /></td>
@@ -48,7 +47,7 @@ function Home() {
                     <th class="text-center">Sea Food </th>
                 </tr>
             </table>
-            <Footer/>
+            
         </div>
     );
 }
