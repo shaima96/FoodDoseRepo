@@ -1,74 +1,73 @@
 [
     {
-        "RestaurantID": 1,
+       
         "Name": "KFC",
-        "Image": "ddddddddddd",
+        "Image": "./kfc.png",
         "Phone": "02252496",
-        "Address": "Hebron",
-        "CategoryID": 1
+        "Address": "Hebron"
+       
     },
     {
-        "RestaurantID": 2,
+       
         "Name": "Shawerma Al-Rayan ",
-        "Image": "fffffffffffffffff",
+        "Image": "./alryan.png",
         "Phone": "02252599",
-        "Address": "Hebron",
-        "CategoryID": 1
+        "Address": "Hebron"
+        
     },
     {
-        "RestaurantID": 3,
+        
         "Name": "Dollar resturant",
-        "Image": "ooooooooooooooooooo",
+        "Image": "./dollar.png",
         "Phone": "02252596",
-        "Address": "Hebron",
-        "CategoryID": 1
+        "Address": "Hebron"
+     
     },
     {
-        "RestaurantID": 4,
         "Name": "Al-Daiaa",
-        "Image": "sssssssssssssss",
+        "Image": "./aldyaa.png",
         "Phone": "02252951",
-        "Address": "Hebron",
-        "CategoryID": 1
+        "Address": "Hebron"
+        
     },
     {
-        "RestaurantID": 5,
+        
         "Name": "chili House",
-        "Image": "aaaaaaaaaaaaaaaa",
+        "Image": "./chilli.png",
         "Phone": "02252592",
-        "Address": "Hebron",
-        "CategoryID": 1
+        "Address": "Hebron"
+        
     },
     {
-        "RestaurantID": 11,
+        
         "Name": "ALQuds Resturant",
         "Image": "./alqus.png",
         "Phone": "+972 2-221-3833",
-        "Address": "Hebron-Ras AlJura",
-        "CategoryID": 7
+        "Address": "Hebron-Ras AlJura"
+      
     },
     {
-        "RestaurantID": 12,
+       
         "Name": "AbuMazen Resturant",
-        "Image": "./alqus.png",
+        "Image": "./abumazen.png",
         "Phone": "02252896",
-        "Address": "Hebron-Namera stree",
-        "CategoryID": 7
+        "Address": "Hebron-Namera stree"
+   
     },
     {
-        "RestaurantID": 13,
+       
         "Name": "Hekayet Bahar ",
         "Image": "./hekaya.png",
         "Phone": "022291849",
-        "Address": "Hebron",
-        "CategoryID": 10
+        "Address": "Hebron"
+       
     },
     {
-        "RestaurantID": 14,
+        
         "Name": "safinat.alsayyad",
         "Image": "./safinat.png",
         "Phone": "02-2294081",
-        "Address": "Hebron",
-        "CategoryID": 10
+        "Address": "Hebron"
+       
     }
 ]

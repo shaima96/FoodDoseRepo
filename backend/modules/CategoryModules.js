@@ -3,10 +3,7 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var CategorySchema = new Schema({
-    CategoryID:
-    {
-        type: Number
-    },
+
     Name:
     {
         type: String
@@ -15,10 +12,7 @@ var CategorySchema = new Schema({
     {
         type: String
     },
-    restaurants:[ {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Restaurant'
-    }]
+   
 });
 
 

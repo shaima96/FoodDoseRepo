@@ -3,10 +3,11 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var RestaurantSchema = new Schema({
-    RestaurantID:
-    {
-        type: Number
+    resCategory: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Category'
     },
+
     Name:
     {
         type: String
@@ -17,16 +18,13 @@ var RestaurantSchema = new Schema({
     },
     Phone:
     {
-        type: String
+        type: Number
     },
     Address:
     {
         type: String
     },
-    category: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Category'
-    }
+   
 });
 
 
