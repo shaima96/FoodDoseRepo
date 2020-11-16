@@ -19,18 +19,7 @@ table{
     .img:hover  {
      opacity: 0.6;
     }
-.appbar{
-    margin-top: 0;
-    background-color: white;
-    
-}
  
-#fooddose{
-    font: 45px 'Ravi Prakash', cursive ;
-    color: #F69624;
-    margin-top: -2%;
-
-}
 th {
     font-family: 'Ubuntu';
     font-style: normal;

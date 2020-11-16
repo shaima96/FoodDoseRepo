@@ -1,0 +1,52 @@
+[
+    {
+        "CategoryID": 1,
+        "Name": "FastFood",
+        "Image": "./fastfood.png"
+    },
+    {
+        "CategoryID": 2,
+        "Name": "HealthyFood ",
+        "Image": "./healthyfood.png"
+    },
+    {
+        "CategoryID": 3,
+        "Name": "Barbecue",
+        "Image": "./barbecue.png"
+    },
+    {
+        "CategoryID": 4,
+        "Name": "Salad",
+        "Image": "./salad.png"
+    },
+    {
+        "CategoryID": 5,
+        "Name": "Drinks",
+        "Image": "./drinks.png"
+    },
+    {
+        "CategoryID": 6,
+        "Name": "Bakeries",
+        "Image": "./bakries.png"
+    },
+    {
+        "CategoryID": 7,
+        "Name": "Traditional Food",
+        "Image": "./traditional.png"
+    },
+    {
+        "CategoryID": 8,
+        "Name": "Pasta",
+        "Image": "./pasta.png"
+    },
+    {
+        "CategoryID": 9,
+        "Name": "Dessert",
+        "Image": "./desert.png"
+    },
+    {
+        "CategoryID": 10,
+        "Name": "Sea Food",
+        "Image": "./seafood.png"
+    }
+]
