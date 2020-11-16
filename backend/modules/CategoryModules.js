@@ -12,7 +12,7 @@ var CategorySchema = new Schema({
     {
         type: String
     },
-   
+
 });
 
 
