@@ -4,7 +4,8 @@ import Footer from '../src/components/Footer/footer.js';
 import Login from '../src/components/LogIn/LogIn.js'
 import SignUp from '../src/components/Signup/signUp.js';
 import Home from '../src/components/Home/home.js';
-import Header from '../src/components/Header/header.js'
+import Header from '../src/components/Header/header.js';
+// import Fastresturant from '../src/components/Fastresturant/fastresturant.js';
 class App extends Component {
     render() {
         return (
@@ -14,7 +15,6 @@ class App extends Component {
                     <Route path="/" exact component={() => <Home />} />
                     <Route path="/login" exact component={() => <Login />} />
                     <Route path="/signup" exact component={() => <SignUp />} />
-                    <Footer />
                 </Router>
                 <Footer />
             </div>
