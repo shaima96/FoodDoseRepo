@@ -1,16 +1,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import alrayan from "./alrayan.png"
-import chilliHouse from "./chilliHouse.png"
+import chilliHouse from "./chiliHouse.png"
 import dayia from "./dayia.png"
 import dollar from "./dollar.png"
 import kfc from "./kfc.png"
 import Mrbaker from "./Mrbaker.png"
 import royal from "./royal.png"
 import segafredo from "./segafredo.png"
-import uburger from "./uberger.png"
+import uburger from "./uburger.png"
 import yummy from "./yummy.png"
-import './home.css'
+import './fastresturant.css'
 
 function Fastresturant() {
     return (
