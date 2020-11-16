@@ -30,7 +30,8 @@ function Header() {
         <div className={classes.root}>
             <AppBar position="static" class="appbar">
                 <Toolbar>
-                    <Typography variant="h6" className={classes.title} id="fooddose">
+                    
+                    <Typography variant="h6" className={classes.title} id="fooddose" >
                         FoodDose
                         </Typography>
                     <Login onClick={() => {

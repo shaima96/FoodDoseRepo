@@ -9,13 +9,20 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <div className='header'>
+                    <Header />
+                </div>
+                 <div>
                 <Router>
-                <Header/>
                     <Route path="/" exact component={() => <Home />} />
                     <Route path="/login" exact component={() => <Login />} />
                     <Route path="/signup" exact component={() => <SignUp />} />
-                    <Footer />
+                    <Route path="/signup" exact component={() => <SignUp />} />
                 </Router>
+                </div>
+                <div className="footer">
+                    <Footer />
+                </div>
             </div>
         );
     }
