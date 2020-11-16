@@ -9,6 +9,11 @@ routers.get('/', function (req, res, next) {
     res.send('hello world ');
 });
 
+//Home rout 
+// routers.post('/', function (req, res) {
+    
+// });
+
 // SignUP rout / post data 
 routers.post('/signup', (req, res) => {
     const signedUpUser = new userSchema({
@@ -37,6 +42,10 @@ routers.post('/login', (req, res) => {
 
         .then((data) => res.status(200).send(data))
         .catch((err) => res.status(404).send(err, "error"));
+
+})
+routers.post('/fastfoodres', (req, res) => {
+  
 
 })
 
