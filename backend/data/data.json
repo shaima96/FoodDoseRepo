@@ -1,0 +1,37 @@
+[
+    {
+        "ResturentID": 1,
+        "Name": "KFC",
+        "Image": "",
+        "Phone": "02252496",
+        "Address": "Hebron"
+    },
+    {
+        "ResturentID": 2,
+        "Name": "Shawerma Al-Rayan ",
+        "Image": "",
+        "Phone": "02252599",
+        "Address": "Hebron"
+    },
+    {
+        "ResturentID": 3,
+        "Name": "KFC",
+        "Image": "Dollar resturant",
+        "Phone": "02252596",
+        "Address": "Hebron"
+    },
+    {
+        "ResturentID": 4,
+        "Name": "Al-Daiaa",
+        "Image": "",
+        "Phone": "02252951",
+        "Address": "Hebron"
+    },
+    {
+        "ResturentID": 5,
+        "Name": "chili House",
+        "Image": "",
+        "Phone": "02252592",
+        "Address": "Hebron"
+    }
+]

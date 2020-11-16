@@ -1,6 +1,7 @@
 const express = require('express');
 const routers = express.Router();
 const userSchema = require('./modules/SignUpModule.js');
+const fastFoodSchema = require('./modules/CategoryModules.js');
 // const login = require('./controllers/logIn')
 
 
@@ -39,6 +40,19 @@ routers.post('/login', (req, res) => {
         .catch((err) => res.status(404).send(err, "error"));
 
 })
+
+
+
+routers.get('/food', (req, res) => {
+    
+    signedUpUser.save()
+        .then(data => {
+            res.json(data)
+        }).catch(err => {
+            res.json(err)
+        })
+})
+
 
 
 module.exports = routers;
