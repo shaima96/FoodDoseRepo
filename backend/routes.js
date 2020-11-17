@@ -4,7 +4,11 @@ const userSchema = require('./modules/SignUpModule.js');
 const Restaurant = require('./modules/resturantModule.js')
 const Category = require('./modules/CategoryModules.js')
 const { routes } = require('./server.js');
-const db = require('./db.js')
+const db = require('./db.js');
+const { Router } = require('express');
+const jwt = require('jsonwebtoken');
+const withAuth = require('./middleware');
+
 
 
 
@@ -97,6 +101,33 @@ routers.post('/restFind', (req, res) => {
         })
 })
 
+///////////////////
+// routers.post('/catFind', (req, res) => {
+
+//   Category.findOne({ Name: req.body.Name })
+//       .populate('catRestaurants')
+//       .exec((err, cate) => {
+//           if (err) return res.status(404).json({ success: false })
+//           res.json(cate)
+//       })
+// })
+// routers.post('/catFind', (req, res) => {
+// Restaurant.
+//   find().
+//   populate({
+//     path: 'resCategory',
+//     match: { Name: req.body.Name },
+//     // Explicitly exclude `_id`, see http://bit.ly/2aEfTdB
+//     select: 'Name'
+//   }).
+//   exec();
+// })
+/////////////////////
+
+
+
+
+
 
 
 //find  restaurant  by id
@@ -109,6 +140,76 @@ routers.post('/restFind/:id', (req, res) => {
         })
 })
 
+
+// POST route to register a user
+routers.post('/register', function(req, res) {
+    const { userName,email, password } = req.body;
+    const user = new userSchema({ email, password,userName });
+    user.save(function(err) {
+      if (err) {
+        res.status(500)
+          .send("Error registering new user please try again.");
+      } else {
+        res.status(200).send("Welcome to the FoodDoose!");
+      }
+    });
+  });
+
+ 
+  //authontication 
+  routers.post('/authenticate', function(req, res) {
+    const { email, password } = req.body;
+    userSchema.findOne({ email }, function(err, user) {
+      if (err) {
+        console.error(err);
+        res.status(500)
+          .json({
+          error: 'Internal error please try again'
+        });
+      } else if (!user) {
+        res.status(401)
+          .json({
+            error: 'Incorrect email or password'
+          });
+      } else {
+        user.isCorrectPassword(password, function(err, same) {
+          if (err) {
+            res.status(500)
+              .json({
+                error: 'Internal error please try again'
+            });
+          } else if (!same) {
+            res.status(401)
+              .json({
+                error: 'Incorrect email or password'
+            });
+          } else {
+            // Issue token
+            const payload = { email };
+            const token = jwt.sign(payload, secret, {
+              expiresIn: '1h'
+            });
+            res.cookie('token', token, { httpOnly: true })
+              .sendStatus(200);
+          }
+        });
+      }
+    });
+  });
+
+  routers.get('/secret', withAuth, function(req, res) {           // for the secret
+    res.send('The password is flower');
+  });
+
+  //route will return a 200 HTTP status if our requester has a valid token
+  routers.get('/checkToken', withAuth, function(req, res) {
+    res.sendStatus(200);
+  })
+
+  routers.get('/AU', withAuth, function(req, res) {
+    console.log(req.userSchema)
+    res.sendStatus(200);
+  })
 
 
 module.exports = routers;

@@ -29,19 +29,41 @@ class Login extends Component {
         this.setState({ Email: e.target.value })
     }
 
-    onSubmit(e) {
-        e.preventDefault()
-        const registered = {
-            Password: this.state.Password,
-            Email: this.state.Email
-        }
-        axios.post('http://localhost:5000/fooddose/login', registered)
-            .then(response => console.log(response.data))
-        this.setState({
-            Password: '',
-            Email: ''
+    // onSubmit(e) {
+    //     e.preventDefault()
+    //     const registered = {
+    //         Password: this.state.Password,
+    //         Email: this.state.Email
+    //     }
+    //     axios.post('http://localhost:5000/fooddose/login', registered)
+    //         .then(response => console.log(response.data))
+    //     this.setState({
+    //         Password: '',
+    //         Email: ''
+    //     })
+    // }
+    onSubmit = (event) => {
+        event.preventDefault();
+        fetch('http://localhost:5000/fooddose/authenticate', {
+          method: 'POST',
+          body: JSON.stringify(this.state),
+          headers: {
+            'Content-Type': 'application/json'
+          }
         })
-    }
+        .then(res => {
+          if (res.status === 200) {
+            this.props.history.push('/');
+          } else {
+            const error = new Error(res.error);
+            throw error;
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          alert('Error logging in please try again');
+        });
+      }
 
     render() {
         return (
