@@ -24,7 +24,7 @@ var RestaurantSchema = new Schema({
     {
         type: String
     },
-   
+
 });
 
 
