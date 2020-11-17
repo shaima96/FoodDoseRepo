@@ -10,11 +10,13 @@ const db = require('./db.js')
 
 
 
-
-
 routers.get('/', function (req, res, next) {
     res.send('hello world ');
 });
+
+//Home rout 
+// routers.post('/', function (req, res) {  
+// });
 
 // SignUP rout / post data 
 routers.post('/signup', (req, res) => {
@@ -39,14 +41,18 @@ routers.post('/login', (req, res) => {
     const { Email, Password } = req.body;
     userSchema.findOne({
         where: { Email, Password },
-
     })
-
         .then((data) => res.status(200).send(data))
         .catch((err) => res.status(404).send(err, "error"));
+})
+
+routers.post('/fastfoodres', (req, res) => {
 
 })
 
+routers.post('/fastfoodres/royal', (req, res) => {
+
+})
 
 // routers.get('/categories',CategoryControls.all)
 // routers.get('/categories/create',CategoryControls.create) // To create new Category 
