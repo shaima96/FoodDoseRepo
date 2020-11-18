@@ -5,6 +5,28 @@ const Restaurant = require('./modules/resturantModule.js')
 const Category = require('./modules/CategoryModules.js')
 const { routes } = require('./server.js');
 const db = require('./db.js')
+const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+const authentication = require('../middleware/authentication.js')
+const { User } = require('../modules/SignUpModule.js')
+
+
+
+router.get("/auth", auth, (req, res) => {
+    if (req.user) {
+        res.json({
+            id: req.user._id,
+            UserName: req.user.UserName,
+            Password: req.user.Password,
+            Email: req.user.Email
+        })
+    }
+})
+router.post("/getuser", (req, res) => {
+    User.findOne({ UserName: req.body.UserName })
+        .then((data) => res.status(200).send(data))
+        .catch((err) => res.status(404).send("error"))
+})
 
 
 
