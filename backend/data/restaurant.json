@@ -1,7 +1,7 @@
 [
     {
         "Name": "KFC",
-        "Image": "./kfc.png",
+        "Image": "./photo/kfc.png",
         "Phone": "02252496",
         "Address": "Hebron"
     },
@@ -50,6 +50,12 @@
     {
         "Name": "safinat.alsayyad",
         "Image": "./safinat.png",
+        "Phone": "02-2294081",
+        "Address": "Hebron"
+    },
+    {
+        "Name": "Royal resturant",
+        "Image": "./royal.png",
         "Phone": "02-2294081",
         "Address": "Hebron"
     }

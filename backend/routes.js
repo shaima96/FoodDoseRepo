@@ -50,6 +50,9 @@ routers.post('/fastfoodres/royal', (req, res) => {
 
 })
 
+routers.post('/healthyresturant', (req, res) => {
+
+})
 
 
 
