@@ -14,7 +14,9 @@ class Login extends Component {
         super();
         this.state = {
             Email: '',
-            Password: ''
+            Password: '',
+            token: ''
+
         }
         this.changePassword = this.changePassword.bind(this);
         this.changeEmail = this.changeEmail.bind(this);
@@ -29,53 +31,40 @@ class Login extends Component {
         this.setState({ Email: e.target.value })
     }
 
-    // onSubmit(e) {
-    //     e.preventDefault()
-    //     const registered = {
-    //         Password: this.state.Password,
-    //         Email: this.state.Email
-    //     }
-    //     axios.post('http://localhost:5000/fooddose/login', registered)
-    //         .then(response => console.log(response.data))
-    //     this.setState({
-    //         Password: '',
-    //         Email: ''
-    //     })
-    // }
     onSubmit = (event) => {
         event.preventDefault();
-        fetch('http://localhost:5000/fooddose/authenticate', {
+        fetch('http://localhost:5000/fooddose/login', {
           method: 'POST',
           body: JSON.stringify(this.state),
           headers: {
             'Content-Type': 'application/json'
           }
         })
-        .then(res => {
-          if (res.status === 200) {
-            this.props.history.push('/');
-          } else {
-            const error = new Error(res.error);
-            throw error;
-          }
+       
+        .then(response => response.json())
+        .then( (data) => {
+          localStorage.setItem("jwt-auth", data.token)
+  
+          console.log('Success:', data);
+           window.location.href='/fastfoodres' 
         })
+  
         .catch(err => {
           console.error(err);
-          alert('Error logging in please try again');
         });
       }
-
+     
     render() {
         return (
         
             <div >
-                {/* <Header/> */}
             <Typography component="h1" variant="h3" align="center" id="title"> Login</Typography><br />
             <Box display="flex" justifyContent="center" alignItems="center" minHeight="40vh">
 
                 <form onSubmit={this.onSubmit} >
-                <FormControl margin="normal" required >
+                <FormControl margin="normal"  >
                         <TextField
+                        required
                             id="email"
                             name="email"
                             type="email"
@@ -84,8 +73,9 @@ class Login extends Component {
                             label="Email" variant="outlined"
                         />
                     </FormControl><br />
-                    <FormControl margin="normal" required>
+                    <FormControl margin="normal" >
                         <TextField
+                        required
                             id="password"
                             name="password"
                             type="Password"
@@ -109,7 +99,7 @@ class Login extends Component {
                 </form>
 
             </Box>
-            {/* <Footer /> */}
+        
         </div >
         );
     }
