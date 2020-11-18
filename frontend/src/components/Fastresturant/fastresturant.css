@@ -4,14 +4,14 @@
 }
 table{
     border-collapse:separate;
-    border-spacing:20px 20px;
+    border-spacing:30px 20px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     justify-content:center;
     align-items:center;
 }
-.img{
+ .imag{
     width: 220px;
     height: 150px;
     opacity: 2;
@@ -22,8 +22,8 @@ table{
     transition: .5s ease;
     backface-visibility: hidden;
     }
-    .img:hover  {
-     opacity: 0.6;
+    .imag:hover  {
+     opacity: 0.4;
     }
  
 th {
@@ -34,6 +34,3 @@ th {
 th:hover  {
     opacity: 0.4;
    }
-
-
-    
