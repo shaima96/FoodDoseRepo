@@ -5,9 +5,8 @@ const bodyParser = require('body-parser');
 const database = require('./db');
 var cors = require('cors')
 const cookieParser = require('cookie-parser');
-const withAuth = require('./middleware');
 
-const secret = 'mysecretsshhh'; // for auth
+
 app.use(cookieParser());        // auth
 
 app.use(cors())

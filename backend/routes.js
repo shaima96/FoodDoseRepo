@@ -1,49 +1,81 @@
 const express = require('express');
 const routers = express.Router();
-const userSchema = require('./modules/SignUpModule.js');
+const { User } = require('./modules/SignUpModule.js');
 const Restaurant = require('./modules/resturantModule.js')
 const Category = require('./modules/CategoryModules.js')
 const { routes } = require('./server.js');
 const db = require('./db.js');
 const { Router } = require('express');
 const jwt = require('jsonwebtoken');
-const withAuth = require('./middleware');
+const auth = require('./middleware');
+const bcrypt = require('bcrypt');
 
 
+const secret = 'mysecretsshhh'; // for auth
 
 // deafult route
 routers.get('/', function (req, res, next) {
   res.send('hello world ');
 });
 
-
 // SignUP rout / post data 
 routers.post('/signup', (req, res) => {
-  const signedUpUser = new userSchema({
-    UserID: req.body.UserID,
-    UserName: req.body.UserName,
-    Password: req.body.Password,
-    Email: req.body.Email,
-  })
-  signedUpUser.save()
-    .then(data => {
-      res.json(data)
-    }).catch(err => {
-      res.json(err)
+  const Password = req.body.Password
+  const saltRounds = 10
+  let data = req.body
+
+  User.findOne({ Email: req.body.Email })
+    .then(user => {
+      if (user) return res.json({ message: "email already exists" })
+
+      bcrypt.genSalt(saltRounds)
+        .then((salt) => bcrypt.hash(Password, salt))
+        .then((hashedPassword) => {
+          data.Password = hashedPassword
+          let user = new User(data)
+          user.save()
+            .then((data) => jwt.sign({ id: data._id }, 'secret', { expiresIn: 90000 }, (err, token) => {
+              res.header("jwt-auth", token).json({
+                sucess: true,
+                token: token
+              })
+            }))
+            .catch(err => res.status(404).send(err))
+        })
     })
+    .catch(err => res.send(err))
 })
+
+
 
 
 //LogIn route 
 routers.post('/login', (req, res) => {
-  // console.log('login worked')
-  const { Email, Password } = req.body;
-  userSchema.findOne({
-    where: { Email, Password },
-  })
-    .then((data) => res.status(200).send(data))
-    .catch((err) => res.status(404).send(err, "error"));
+
+  User.findOne({ Email: req.body.Email })
+    .then(data => {
+      if (data) {
+        bcrypt.compare(req.body.Password, data.Password)
+          .then(data1 => {
+            if (data1) {
+              jwt.sign({ id: data._id }, 'mysecret', { expiresIn: 86400 }, (err, token) => {
+                if (err) return res.json({ message: "err creating the token" })
+                res.header("jwt-auth", token).json({
+                  sucess: true,
+                  token: token
+                })
+              })
+            } else {
+              throw Error("incorrect password")
+            }
+          })
+      } else {
+        throw Error("incorrect email")
+      }
+    })
+    .catch(err => res.status(404).send(err))
 })
+
 
 
 // create category
@@ -107,22 +139,18 @@ routers.post('/FindAllResById', (req, res) => {
     })
 })
 
-routers.get("/auth", withAuth, (req, res) => {
-  console.log(req.userSchema)
-  if (req.userSchema) {
-    res.json({
-      id: req.userSchema._id,
-      UserName: req.userSchema.UserName,
-      Password: req.userSchema.Password,
-      Email: req.userSchema.Email
-    })
-  }
+// get user detail 
+routers.post("/getuser", (req, res) => {
+  User.findOne({ UserName: req.body.UserName })
+    .then((data) => res.status(200).send(data))
+    .catch((err) => res.status(404).send("error"))
 })
+
 
 //authontication 
 routers.post('/authenticate', function (req, res) {
   const { email, password } = req.body;
-  userSchema.findOne({ email }, function (err, user) {
+  User.findOne({ email }, function (err, user) {
     if (err) {
       console.error(err);
       res.status(500)
@@ -135,16 +163,16 @@ routers.post('/authenticate', function (req, res) {
           error: 'Incorrect email or password'
         });
     } else {
-      user.isCorrectPassword(password, function (err, same) {
+      User.isCorrectPassword(password, function (err, same) {
         if (err) {
           res.status(500)
             .json({
-              error: 'Internal error please try again'
+              error: ' please try again'
             });
         } else if (!same) {
           res.status(401)
             .json({
-              error: 'Incorrect email or password'
+              error: 'Incorrect Email or Password'
             });
         } else {
           // Issue token
@@ -160,12 +188,12 @@ routers.post('/authenticate', function (req, res) {
   });
 });
 
-routers.get('/secret', withAuth, function (req, res) {           // for the secret
+routers.get('/secret', auth, function (req, res) {           // for the secret
   res.send('The password is flower');
 });
 
 //route will return a 200 HTTP status if our requester has a valid token
-routers.get('/checkToken', withAuth, function (req, res) {
+routers.get('/checkToken', auth, function (req, res) {
   res.sendStatus(200);
 })
 

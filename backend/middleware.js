@@ -1,19 +1,26 @@
+const { User } = require('./modules/SignUpModule.js');
 const jwt = require('jsonwebtoken');
 const secret = 'mysecretsshhh';
 
-const withAuth = function(req, res, next) {
-    const token = req.cookies.token;
-    if (!token) {
-      res.status(401).send('Unauthorized: No token provided');
-    } else {
-      jwt.verify(token, secret, function(err, decoded) {
-        if (err) {
-          res.status(401).send('Unauthorized: Invalid token');
-        } else {
-          req.email = decoded.email;
-          next();
-        }
-      });
-    }
+
+
+const auth = async (req, res, next) => {
+  const token = req.header('jwt-auth');
+  if (!token)
+    return res.status(401).json({ msg: 'No token, authorization denied' });
+
+  try {
+    // Verify token
+    const decoded = await jwt.verify(token, secret);
+    const user = await User.findOne({ _id: decoded.id })
+    console.log(user)
+    req.User = user;
+    next();
+  } catch (e) {
+    res.status(400).json({ msg: 'Token is not valid' });
   }
-  module.exports = withAuth;
+};
+
+
+
+module.exports = auth
