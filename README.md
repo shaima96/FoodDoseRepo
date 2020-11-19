@@ -30,6 +30,9 @@ It is an app that allows the user to find a certain meal and the restaurant that
 
 
 # Structure
+ - backend
+ - frontend
+ 
 
 
 # How to run your project
