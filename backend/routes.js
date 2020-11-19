@@ -101,7 +101,7 @@ routers.post('/restFind', (req, res) => {
 
 
 //find  restaurant  by id
-routers.post('/restCategoryById', (req, res) => {
+routers.post('/restCategoryById/:id', (req, res) => {
     Restaurant.findOne({ _id: req.body._id })
         .populate('resCategory')
         .exec((err, rest) => {
