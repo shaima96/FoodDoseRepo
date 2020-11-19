@@ -16,9 +16,7 @@ function Home() {
     return (
         <div class='container'>
            {/* <Header/> */}
-           <Router>
-                    <Route path="/fastfoodres" exact component={() => <Fastresturant />} />
-                </Router>
+         
             <table align="center">
                 <tr>
                     <td><img src={fastfood} alt="img" class="img" /></td>
