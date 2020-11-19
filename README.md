@@ -34,6 +34,16 @@ It is an app that allows the user to find a certain meal and the restaurant that
 
 # How to run your project
 
+-  Clone this repo (https://github.com/FoodDose/FoodDoseRepo.git)
+
+-   Open your **terminal** .
+
+-   Put in terminal : **npm install**.
+ 
+-   Then put in terminal : **npm start** to run the server.
+
+
+
 
 # Team
 
