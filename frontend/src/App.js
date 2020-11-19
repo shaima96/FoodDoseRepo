@@ -8,6 +8,14 @@ import Header from '../src/components/Header/header.js';
 import Fastresturant from '../src/components/Fastresturant/fastresturant.js'
 import Royal from '../src/components/Royal/royal.js'
 import Healthyresturant from '../src/components/Healthyresturant/healthyresturant.js'
+import Barbecuerest from '../src/components/Barbecuerest/barbecuerest.js';
+import Saladrest from '../src/components/Saladrest/saladrest.js';
+import Drinkrest from '../src/components/Drinkrest/drinkrest.js';
+import Bakeriesrest from '../src/components/Bakeriesrest/bakeriesrest.js';
+import Traditionalrest from '../src/components/Traditionalrest/traditionalrest.js';
+import Pastarest from '../src/components/Pastarest/pastarest.js';
+import Dessertrest from '../src/components/Dessertrest/dessertrest.js';
+import Seafoodrest from '../src/components/Seafoodrest/seafoodrest.js';
 class App extends Component {
     render() {
         return (
@@ -23,6 +31,14 @@ class App extends Component {
                         <Route path="/fastfoodres" exact component={() => <Fastresturant />} />
                         <Route path='/fastfoodres/royal' exact component={() => <Royal />} />
                         <Route path='/healthyresturant' exact component={() => <Healthyresturant />} />
+                        <Route path='/barbecuerest' exact component={() => <Barbecuerest />} />
+                        <Route path='/saladrest' exact component={() => <Saladrest />} />
+                        <Route path='/drinkrest' exact component={() => <Drinkrest />} />
+                        <Route path='/bakeriesrest' exact component={() => <Bakeriesrest />} />
+                        <Route path='/traditionalrest' exact component={() => <Traditionalrest />} />
+                        <Route path='/pastarest' exact component={() => <Pastarest />} />
+                        <Route path='/dessertrest' exact component={() => <Dessertrest />} />
+                        <Route path='/seafoodrest' exact component={() => <Seafoodrest />} />
                     </Router>
                 </div>
                 <div className="footer">

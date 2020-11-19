@@ -53,7 +53,30 @@ routers.post('/fastfoodres/royal', (req, res) => {
 routers.post('/healthyresturant', (req, res) => {
 
 })
+routers.post('/barbecuerest', (req, res) => {
 
+})
+routers.post('/saladrest', (req, res) => {
+
+})
+routers.post('/drinkrest', (req, res) => {
+
+})
+routers.post('/bakeriesrest', (req, res) => {
+
+})
+routers.post('/traditionalrest', (req, res) => {
+
+})
+routers.post('/pastarest', (req, res) => {
+
+})
+routers.post('/dessertrest', (req, res) => {
+
+})
+routers.post('/seafoodrest', (req, res) => {
+
+})
 
 
 // create category
