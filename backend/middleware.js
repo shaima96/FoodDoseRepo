@@ -2,8 +2,6 @@ const { User } = require('./modules/SignUpModule.js');
 const jwt = require('jsonwebtoken');
 const secret = 'mysecretsshhh';
 
-
-
 const auth = async (req, res, next) => {
   const token = req.header('jwt-auth');
   if (!token)

@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css'
+import './title.css';
 import { styled, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
@@ -14,20 +14,9 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
 }));
-const Login = styled(Button)({
-    background: '#F69624',
-    border: 0,
-    borderRadius: 30,
-    color: 'white',
-    height: 48,
-    padding: '20px 30px',
-});
-function Header() {
 
+function Title() {
     const classes = useStyles();
-
-
-
     return (
         <div className={classes.root}>
             <AppBar position="static" class="appbar">
@@ -38,11 +27,6 @@ function Header() {
                     }} >
                         FoodDose
                             </Typography>
-
-                    <Login onClick={() => {
-                        window.location.href = '/login'
-                    }} id="login">LogIn</Login>
-
                 </Toolbar>
             </AppBar>
         </div>
@@ -51,4 +35,4 @@ function Header() {
 }
 
 
-export default Header;
+export default Title;

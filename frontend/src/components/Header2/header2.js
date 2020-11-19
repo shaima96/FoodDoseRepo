@@ -1,8 +1,9 @@
 import React from 'react';
-import './header.css'
+import './header2.css'
 import { styled, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import Title from '../Title/title.js';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -14,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
 }));
-const Login = styled(Button)({
+const Logout = styled(Button)({
     background: '#F69624',
     border: 0,
     borderRadius: 30,
@@ -22,8 +23,7 @@ const Login = styled(Button)({
     height: 48,
     padding: '20px 30px',
 });
-function Header() {
-
+function Header2() {
     const classes = useStyles();
 
 
@@ -33,15 +33,11 @@ function Header() {
             <AppBar position="static" class="appbar">
                 <Toolbar>
 
-                    <Typography variant="h6" className={classes.title} id="fooddose" onClick={() => {
-                        window.location.href = '/'
-                    }} >
-                        FoodDose
-                            </Typography>
+                    <Typography>
+                        <Title />
+                    </Typography>
 
-                    <Login onClick={() => {
-                        window.location.href = '/login'
-                    }} id="login">LogIn</Login>
+                    {/* <Logout /> */}
 
                 </Toolbar>
             </AppBar>
@@ -51,4 +47,4 @@ function Header() {
 }
 
 
-export default Header;
+export default Header2;

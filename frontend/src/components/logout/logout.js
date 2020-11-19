@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css'
+import './logout.css'
 import { styled, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
@@ -14,35 +14,26 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
 }));
-const Login = styled(Button)({
+const Logout1 = styled(Button)({
     background: '#F69624',
     border: 0,
     borderRadius: 30,
     color: 'white',
     height: 48,
-    padding: '20px 30px',
+    padding: '20px 30px'
 });
-function Header() {
-
+function Logout() {
+    
     const classes = useStyles();
-
-
-
+  
     return (
         <div className={classes.root}>
             <AppBar position="static" class="appbar">
                 <Toolbar>
-
-                    <Typography variant="h6" className={classes.title} id="fooddose" onClick={() => {
+                <Logout1 onClick={() => {
+                     localStorage.clear();
                         window.location.href = '/'
-                    }} >
-                        FoodDose
-                            </Typography>
-
-                    <Login onClick={() => {
-                        window.location.href = '/login'
-                    }} id="login">LogIn</Login>
-
+                    }} id="logout">Logout</Logout1>
                 </Toolbar>
             </AppBar>
         </div>
@@ -51,4 +42,4 @@ function Header() {
 }
 
 
-export default Header;
+export default Logout;

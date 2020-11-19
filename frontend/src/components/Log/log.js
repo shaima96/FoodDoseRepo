@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css'
+import './log.css'
 import { styled, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
@@ -22,7 +22,7 @@ const Login = styled(Button)({
     height: 48,
     padding: '20px 30px',
 });
-function Header() {
+function Log() {
 
     const classes = useStyles();
 
@@ -33,11 +33,7 @@ function Header() {
             <AppBar position="static" class="appbar">
                 <Toolbar>
 
-                    <Typography variant="h6" className={classes.title} id="fooddose" onClick={() => {
-                        window.location.href = '/'
-                    }} >
-                        FoodDose
-                            </Typography>
+
 
                     <Login onClick={() => {
                         window.location.href = '/login'
@@ -51,4 +47,4 @@ function Header() {
 }
 
 
-export default Header;
+export default Log;

@@ -5,8 +5,8 @@ import Button from "@material-ui/core/Button";
 import FormControl from "@material-ui/core/FormControl";
 import { TextField, Typography } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
-import './signUp.css'
-
+import './signUp.css';
+import Header from '../Header/header.js'
 
 class SignUp extends Component {
     constructor(props) {
@@ -69,6 +69,7 @@ class SignUp extends Component {
     render() {
         return (
             <div >
+                <Header/>
                 <Typography component="h1" variant="h3" align="center" id="title"> Signup</Typography><br />
                 <Box display="flex" justifyContent="center" alignItems="center" minHeight="50vh">
 
@@ -112,7 +113,7 @@ class SignUp extends Component {
                             size="large"
                             variant="contained"
                             justifyContent="center"
-                          
+
 
                         >
                             Signup

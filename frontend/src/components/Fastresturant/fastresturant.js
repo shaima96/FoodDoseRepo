@@ -11,11 +11,14 @@ import segafredo from "./segafredo.png"
 import uburger from "./uburger.png"
 import yummy from "./yummy.png"
 import './fastresturant.css'
+import Header2 from '../Header2/header2';
+import Logout from '../logout/logout';
 
 function Fastresturant() {
     return (
         <div class='container'>
-
+           <Header2/>
+           <Logout/>
             <table align="center">
                 <tr>
                     <td><img src={kfc} alt="img" class="imag" /></td>

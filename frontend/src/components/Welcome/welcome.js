@@ -10,17 +10,15 @@ import pasta from "./pasta.png"
 import salad from "./salad.png"
 import seafood from "./seafood.png"
 import traditional from "./traditional.png"
-import './home.css'
-import Logout from '../logout/logout.js'
-import Title from '../Title/title.js'
+import './welcome.css'
+import Header from '../Header/header';
 
-function Home() {
+function Welcome() {
     return (
-
-
+   
+     
         <div class='container'>
-            <Title />
-            <Logout />
+              <Header/>
             <table align="center">
                 <tr>
                     <td><img src={fastfood} alt="img" class="img" onClick={() => {
@@ -86,4 +84,4 @@ function Home() {
 }
 
 
-export default Home;
+export default Welcome;

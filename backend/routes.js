@@ -152,52 +152,12 @@ routers.get("/auth", auth, (req, res) => {
     res.json({
       id: req.user._id,
       UserName: req.user.UserName,
-      Password:req.user.Password,
+      Password: req.user.Password,
       Email: req.user.Email
     })
   }
 })
 
-//authontication 
-// routers.post('/authenticate', function (req, res) {
-//   const { email, password } = req.body;
-//   User.findOne({ email }, function (err, user) {
-//     if (err) {
-//       console.error(err);
-//       res.status(500)
-//         .json({
-//           error: 'Internal error please try again'
-//         });
-//     } else if (!user) {
-//       res.status(401)
-//         .json({
-//           error: 'Incorrect email or password'
-//         });
-//     } else {
-//       User.isCorrectPassword(password, function (err, same) {
-//         if (err) {
-//           res.status(500)
-//             .json({
-//               error: ' please try again'
-//             });
-//         } else if (!same) {
-//           res.status(401)
-//             .json({
-//               error: 'Incorrect Email or Password'
-//             });
-//         } else {
-//           // Issue token
-//           const payload = { email };
-//           const token = jwt.sign(payload, secret, {
-//             expiresIn: '2h'
-//           });
-//           res.cookie('token', token, { httpOnly: true })
-//             .sendStatus(200);
-//         }
-//       });
-//     }
-//   });
-// });
 
 routers.get('/secret', auth, function (req, res) {           // for the secret
   res.send('The password is flower');
@@ -206,6 +166,12 @@ routers.get('/secret', auth, function (req, res) {           // for the secret
 //route will return a 200 HTTP status if our requester has a valid token
 routers.get('/checkToken', auth, function (req, res) {
   res.sendStatus(200);
+})
+
+routers.get("/logout", (req, res) => {
+  res.header("jwt-auth", "", { maxAge: 1 }).json({
+    token: ""
+  })
 })
 
 

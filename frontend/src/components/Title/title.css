@@ -1,0 +1,14 @@
+.header{
+    display:fixed;
+   
+}
+.appbar{
+    margin-top: 0;
+    background-color: white;
+}
+#fooddose{
+    font: 45px 'Ravi Prakash', cursive ;
+    color: #F69624;
+    margin-top: 0%;
+
+}
