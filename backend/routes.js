@@ -175,5 +175,16 @@ routers.get("/logout", (req, res) => {
 })
 
 
+  //find  restaurant  by id
+  routers.post('/restCategoryById/:id', (req, res) => {
+    Restaurant.findOne({ _id: req.body._id })
+      .populate('resCategory')
+      .exec((err, rest) => {
+        if (err) return res.status(404).json({ success: false })
+        res.json(rest)
+      })
+  });
 
-module.exports = routers;
+
+
+ module.exports = routers;
