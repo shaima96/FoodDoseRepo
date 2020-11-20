@@ -102,7 +102,7 @@ routers.post('/createRes', (req, res) => {
     Address: req.body.Address
   })
   restau.save((err, restau) => {
-    if (err) return res.status(404).json({ error })
+    if (err) return res.status(404).json({ error : err})
     res.json(restau)
   })
 })
