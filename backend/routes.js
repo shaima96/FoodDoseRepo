@@ -42,19 +42,12 @@ routers.post('/login', (req, res) => {
         .catch((err) => res.status(404).send(err, "error"));
 })
 
-routers.post('/fastfoodres', (req, res) => {
-
-})
 
 routers.get('/fastfoodres/royal/:id', (req, res) => {
     Restaurant.find()
     .then((cato) => res.status(200).send(cato))
-        .catch((err) => res.status(404).send(err, "error"));
-
-})
-
-routers.post('/healthyresturant', (req, res) => {
-
+    .catch((err) => res.status(404).send(err, "error"));
+    
 })
 
 
