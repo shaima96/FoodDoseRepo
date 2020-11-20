@@ -33,33 +33,30 @@ class SignUp extends Component {
     changeEmail(e) {
         this.setState({ Email: e.target.value })
     }
-        onSubmit(e) {
+    onSubmit(e) {
         e.preventDefault()
         const registered = {
             UserName: this.state.UserName,
             Password: this.state.Password,
             Email: this.state.Email
         }
-      
-
-         
         fetch('http://localhost:5000/fooddose/signup', {
-            method: 'POST', 
+            method: 'POST',
             headers: {
-              'Content-Type': 'application/json',
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify(this.state),
-          })
+        })
             .then(response => response.json())
             .then(data => {
-              localStorage.setItem("jwt-auth", data.token)
-              alert("you registered sucssesfully");
-                window.location.href='/login'            // to go from signup to signin
+                localStorage.setItem("jwt-auth", data.token)
+                alert("you registered sucssesfully");
+                window.location.href = '/login'            // to go from signup to signin
             })
             .catch((error) => {
-              console.error('Error:', error);
+                console.error('Error:', error);
             });
-        
+
         this.setState({
             UserName: '',
             Password: '',
@@ -69,14 +66,14 @@ class SignUp extends Component {
     render() {
         return (
             <div >
-                <Header/>
+                <Header />
                 <Typography component="h1" variant="h3" align="center" id="title"> Signup</Typography><br />
                 <Box display="flex" justifyContent="center" alignItems="center" minHeight="50vh">
 
                     <form onSubmit={this.onSubmit} >
-                        <FormControl margin="normal"  id="input" >
+                        <FormControl margin="normal" id="input" >
                             <TextField
-                             required
+                                required
                                 id="username"
                                 name="username"
                                 value={this.state.UserName}
@@ -87,7 +84,7 @@ class SignUp extends Component {
                         </FormControl><br />
                         <FormControl margin="normal" >
                             <TextField
-                               required
+                                required
                                 id="password"
                                 name="password"
                                 type="Password"
@@ -98,7 +95,7 @@ class SignUp extends Component {
                         </FormControl><br />
                         <FormControl margin="normal" >
                             <TextField
-                             required
+                                required
                                 id="email"
                                 name="email"
                                 type="email"
@@ -121,13 +118,11 @@ class SignUp extends Component {
                     </form>
 
                 </Box>
-              
+
             </div >
         );
     }
 }
-
-
 
 export default SignUp;
 

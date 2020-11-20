@@ -15,10 +15,8 @@ import Header from '../Header/header';
 
 function Welcome() {
     return (
-   
-     
         <div class='container'>
-              <Header/>
+            <Header />
             <table align="center">
                 <tr>
                     <td><img src={fastfood} alt="img" class="img" onClick={() => {
@@ -82,6 +80,4 @@ function Welcome() {
         </div>
     );
 }
-
-
 export default Welcome;

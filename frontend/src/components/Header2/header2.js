@@ -36,9 +36,6 @@ function Header2() {
                     <Typography>
                         <Title />
                     </Typography>
-
-                    {/* <Logout /> */}
-
                 </Toolbar>
             </AppBar>
         </div>

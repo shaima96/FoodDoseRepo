@@ -23,18 +23,11 @@ const Login = styled(Button)({
     padding: '20px 30px',
 });
 function Log() {
-
     const classes = useStyles();
-
-
-
     return (
         <div className={classes.root}>
             <AppBar position="static" class="appbar">
                 <Toolbar>
-
-
-
                     <Login onClick={() => {
                         window.location.href = '/login'
                     }} id="login">LogIn</Login>
@@ -43,8 +36,6 @@ function Log() {
             </AppBar>
         </div>
     );
-
 }
-
 
 export default Log;

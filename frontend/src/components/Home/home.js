@@ -16,8 +16,6 @@ import Title from '../Title/title.js'
 
 function Home() {
     return (
-
-
         <div class='container'>
             <Title />
             <Logout />
