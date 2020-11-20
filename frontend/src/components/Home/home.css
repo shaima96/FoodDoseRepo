@@ -18,6 +18,7 @@ table{
     transition: .5s ease;
     backface-visibility: hidden;
     border-radius: 20px;
+    background-color: black;
    }
     .img:hover  {
      opacity: 0.6;
