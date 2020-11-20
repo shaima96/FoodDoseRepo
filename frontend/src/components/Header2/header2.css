@@ -5,7 +5,6 @@
     font-weight: bold;
     font-family: "Ubuntu";
 }
-
 .header{
     display:fixed;
    
@@ -17,6 +16,7 @@
 #fooddose{
     font: 45px 'Ravi Prakash', cursive ;
     color: #F69624;
-    margin-top: 0%;
+    position: relative;
+    top: 3px;
 
 }

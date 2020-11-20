@@ -40,7 +40,7 @@ class App extends Component {
                         <Route path="/home" exact component={() => <Home />} />
                         <Route path="/login" exact component={() => <Login />} />
                         <Route path="/signup" exact component={() => <SignUp />} />
-                        <Route path="/logout" exact component={() => <Logout/>} />
+                        <Route path="/logout" exact component={() => <Logout />} />
                         <Route path="/fastfoodres" exact component={() => <Fastresturant />} />
                         <Route path='/fastfoodres/royal/5fb4cc6bed78552714cfb3af' exact component={() => <Royal />} />
                         <Route path='/fastfoodres/royal/5fb4cc6bed785524445dfksu' exact component={() => <KFC />} />
@@ -69,6 +69,4 @@ class App extends Component {
         );
     }
 }
-
-
 export default App;

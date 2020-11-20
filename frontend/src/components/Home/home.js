@@ -16,8 +16,6 @@ import traditional from './traditinal.png'
 
 function Home() {
     return (
-
-
         <div class='container'>
             <Title />
             <Logout />
