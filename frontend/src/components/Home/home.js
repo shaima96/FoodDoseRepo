@@ -1,10 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css'
-<<<<<<< HEAD
 import Logout from '../logout/logout.js'
 import Title from '../Title/title.js'
-=======
 import pasta from './pasta.png'
 import bakerie from './bakerie.png'
 import barbecue from './barbecue.png'
@@ -15,7 +13,6 @@ import salad from './salad.png'
 import traditional from './traditinal.png'
 // import pasta from './pasta.png'
 // import pasta from './pasta.png'
->>>>>>> 518c09f511621269bf0efea99ccaab442245beb9
 
 function Home() {
     return (
