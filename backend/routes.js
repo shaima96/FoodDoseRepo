@@ -127,6 +127,18 @@ routers.post('/restFindById', (req, res) => {
       res.json(rest)
     })
 })
+        .then((data) => res.status(200).send(data))
+        .catch((err) => res.status(404).send(err, "error"));
+
+
+
+routers.get('/fastfoodres/royal/:id', (req, res) => {
+    Restaurant.find()
+    .then((cato) => res.status(200).send(cato))
+    .catch((err) => res.status(404).send(err, "error"));
+    
+})
+
 
 
 //find  restaurants  by  category id

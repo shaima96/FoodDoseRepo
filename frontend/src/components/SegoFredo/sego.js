@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import './royal.css'
+import './sego.css'
 import axios from 'axios';
-class Royal extends React.Component {
+class Sego extends React.Component {
     state = {
-        royal: []
+        rayan: []
     };
 
 
@@ -16,9 +16,9 @@ class Royal extends React.Component {
         axios.get(`http://localhost:5000/fooddose/fastfoodres/royal/${id}`)
             .then(fastfoodres => {
                 this.setState({
-                    royal: fastfoodres.data[7]
+                    rayan: fastfoodres.data[6]
                 });
-                console.log(this.state.royal)
+                console.log(this.state.rayan)
             })
 
     }
@@ -26,11 +26,11 @@ class Royal extends React.Component {
         return (
             <div className='royal'>
                 <div className='royalimg'>
-                    <img src={this.state.royal.Image} alt="img" class="royalimg" />
+                    <img src={this.state.rayan.Image} alt="img" class="royalimg" />
                     <div class="royalinfo">
                         <h1>Contact Details</h1>
-                        <h2>Address: {this.state.royal.Address}</h2>
-                        <h3>Phone: {this.state.royal.Phone }</h3>
+                        <h2>Address: {this.state.rayan.Address}</h2>
+                        <h3>Phone: {this.state.rayan.Phone }</h3>
                     </div>
 
                     <div class="royalsocial">
@@ -44,4 +44,4 @@ class Royal extends React.Component {
     }
 }
 
-export default Royal;
+export default Sego;
