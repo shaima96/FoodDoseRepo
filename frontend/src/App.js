@@ -7,6 +7,15 @@ import Home from '../src/components/Home/home.js';
 import Header from '../src/components/Header/header.js';
 import Fastresturant from '../src/components/Fastresturant/fastresturant.js'
 import Royal from '../src/components/Royal/royal.js'
+import KFC from '../src/components/KFC/kfc.js'
+import Rayan from '../src/components/AL-Rayan/rayan.js'
+import Dolar from '../src/components/Dolar/dolar.js'
+import Daiah from '../src/components/Daiah/daiah.js'
+import Ch from '../src/components/ChilieHouse/ch.js'
+import Yummy from "../src/components/Yummy/yummy.js"
+import Sego from "../src/components/SegoFredo/sego.js"
+import Dose from "../src/components/DoseBurger/dose.js"
+
 import Healthyresturant from '../src/components/Healthyresturant/healthyresturant.js'
 import Barbecuerest from '../src/components/Barbecuerest/barbecuerest.js';
 import Saladrest from '../src/components/Saladrest/saladrest.js';
@@ -29,7 +38,15 @@ class App extends Component {
                         <Route path="/login" exact component={() => <Login />} />
                         <Route path="/signup" exact component={() => <SignUp />} />
                         <Route path="/fastfoodres" exact component={() => <Fastresturant />} />
-                        <Route path='/fastfoodres/royal' exact component={() => <Royal />} />
+                        <Route path='/fastfoodres/royal/5fb4cc6bed78552714cfb3af' exact component={() => <Royal />} />
+                        <Route path='/fastfoodres/royal/5fb4cc6bed785524445dfksu' exact component={() => <KFC />} />
+                        <Route path='/fastfoodres/royal/5fb4cc6bed78555451dsihao' exact component={() => <Rayan />} />
+                        <Route path='/fastfoodres/royal/5fb4cc6bek56464545dskdk' exact component={() => <Dolar />} />
+                        <Route path='/fastfoodres/royal/5fb4cc6bek56887454hihdi' exact component={() => <Daiah />} />
+                        <Route path='/fastfoodres/royal/5fb4cc6bek54764575ojisk' exact component={() => <Ch />} />
+                        <Route path='/fastfoodres/royal/5fb4cc6bek58649565djfhs' exact component={() => <Yummy />} />
+                        <Route path='/fastfoodres/royal/5fb4cc6bej57569952fxrtv' exact component={() => <Sego />} />
+                        <Route path='/fastfoodres/royal/5fb4cc6bek5741578sdfffg' exact component={() => <Dose />} />
                         <Route path='/healthyresturant' exact component={() => <Healthyresturant />} />
                         <Route path='/barbecuerest' exact component={() => <Barbecuerest />} />
                         <Route path='/saladrest' exact component={() => <Saladrest />} />
