@@ -48,7 +48,7 @@ function Fastresturant() {
                 <tr>
                     <th class="text-center">KFC</th>
                     <th class="text-center">Shawerma Al-Rayan</th>
-                    <th class="text-center">Dollar resturant</th>
+                    <th class="text-center">Dollar</th>
                     <th class="text-center">Al-Daiaa</th>
                     <th class="text-center">Chilli House</th>
                 </tr>
@@ -66,7 +66,7 @@ function Fastresturant() {
                     <th class="text-center">Mr.Baker</th>
                     <th class="text-center">Yummy</th>
                     <th class="text-center">Segafredo</th>
-                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres/royal' }}>Royal resturant</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres/royal' }}>Royal</th>
                     <th class="text-center">Dose Burger</th>
                 </tr>
             </table>
