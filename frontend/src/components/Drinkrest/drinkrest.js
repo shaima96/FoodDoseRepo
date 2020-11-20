@@ -1,10 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './drinkrest.css';
-
+import Header2 from '../Header2/header2';
+import Logout from '../logout/logout';
 function Drinkrest() {
     return (
         <div class='container'>
+            <Header2/>
+           <Logout/>
             <table align="center">
                 <tr>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/31882977_189409458357622_8188058462073126912_n.jpg?_nc_cat=107&ccb=2&_nc_sid=09cbfe&_nc_ohc=a2bEkn8q0OUAX9cyJYP&_nc_oc=AQlU6WZnEM4UCQ2IPqyo9HeN_ywc996z_H6wLQFaswVPKAnBzB6QW38CnNQnjkfpQDs&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=720b28077e14e6d355cdbdb83cf48d85&oe=5FDB03CF"} alt="img" class="imag" /></td>

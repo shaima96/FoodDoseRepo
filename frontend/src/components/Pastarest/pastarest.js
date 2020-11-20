@@ -1,10 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './pastarest.css'
+import Header2 from '../Header2/header2';
+import Logout from '../logout/logout';
 
 function Pastarest() {
     return (
         <div class='container'>
+            <Header2/>
+           <Logout/>
             <table align="center">
                 <tr>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/80812782_1018300865184215_2238701301598781440_o.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=c-OIK0PxBKoAX9dAG72&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=99765885c0db6057cbcb2b91386ad1c2&oe=5FDA662A"} alt="img" class="imag" /></td>

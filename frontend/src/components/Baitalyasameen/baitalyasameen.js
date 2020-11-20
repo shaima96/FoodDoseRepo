@@ -3,10 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import './dose.css'
+import './baitalyasameen.css'
 import axios from 'axios';
 import Header2 from '../Header2/header2';
-class Dose extends React.Component {
+// import Logout from '../logout/logout';
+class Baitalyasameen extends React.Component {
     state = {
         rayan: []
     };
@@ -17,7 +18,7 @@ class Dose extends React.Component {
         axios.get(`http://localhost:5000/fooddose/fastfoodres/royal/${id}`)
             .then(fastfoodres => {
                 this.setState({
-                    rayan: fastfoodres.data[8]
+                    rayan: fastfoodres.data[63]
                 });
                 console.log(this.state.rayan)
             })
@@ -26,13 +27,14 @@ class Dose extends React.Component {
     render() {
         return (
             <div className='royal'>
-                <Header2/>
+                <Header2 />
+                {/* <Logout /> */}
                 <div className='royalimg'>
                     <img src={this.state.rayan.Image} alt="img" class="royalimg" />
                     <div class="royalinfo">
                         <h1>Contact Details</h1>
                         <h2>Address: {this.state.rayan.Address}</h2>
-                        <h3>Phone: {this.state.rayan.Phone }</h3>
+                        <h3>Phone: {this.state.rayan.Phone}</h3>
                     </div>
 
                     <div class="royalsocial">
@@ -46,4 +48,4 @@ class Dose extends React.Component {
     }
 }
 
-export default Dose;
+export default Baitalyasameen;

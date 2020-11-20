@@ -5,6 +5,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import './sego.css'
 import axios from 'axios';
+import Header2 from '../Header2/header2';
+
 class Sego extends React.Component {
     state = {
         rayan: []
@@ -25,12 +27,14 @@ class Sego extends React.Component {
     render() {
         return (
             <div className='royal'>
+                <Header2 />
+
                 <div className='royalimg'>
                     <img src={this.state.rayan.Image} alt="img" class="royalimg" />
                     <div class="royalinfo">
                         <h1>Contact Details</h1>
                         <h2>Address: {this.state.rayan.Address}</h2>
-                        <h3>Phone: {this.state.rayan.Phone }</h3>
+                        <h3>Phone: {this.state.rayan.Phone}</h3>
                     </div>
 
                     <div class="royalsocial">

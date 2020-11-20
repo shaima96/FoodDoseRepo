@@ -1,10 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './dessertrest.css'
-
+import Header2 from '../Header2/header2';
+import Logout from '../logout/logout';
 function Dessertrest() {
     return (
         <div class='container'>
+             <Header2/>
+           <Logout/>
             <table align="center">
                 <tr>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/12027759_911004388990235_5037291439232041310_n.jpg?_nc_cat=108&ccb=2&_nc_sid=174925&_nc_ohc=8FoLndN4LeoAX-9tU5B&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=93dbe19234f59f51c1a458d720967d2f&oe=5FD9C2E6"} alt="img" class="imag" /></td>

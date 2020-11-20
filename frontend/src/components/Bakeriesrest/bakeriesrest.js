@@ -1,11 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './bakeriesrest.css'
-
+import Header2 from '../Header2/header2';
+import Logout from '../logout/logout';
 
 function Bakeriesrest() {
     return (
         <div class='container'>
+            <Header2/>
+           <Logout/>
             <table align="center">
                 <tr>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t31.0-8/p960x960/22254677_1502323843195017_569180221215907570_o.png?_nc_cat=104&ccb=2&_nc_sid=85a577&_nc_ohc=MQe4Am8KfRYAX-pFWen&_nc_ht=scontent.fjrs4-1.fna&oh=2766dcdd77fce775faecd1ead62c6d62&oe=5FDB1DA6"} alt="img" class="imag" /></td>

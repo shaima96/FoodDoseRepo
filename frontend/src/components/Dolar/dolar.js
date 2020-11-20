@@ -5,6 +5,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import './dolar.css'
 import axios from 'axios';
+import Header2 from '../Header2/header2';
 class Dolar extends React.Component {
     state = {
         rayan: []
@@ -25,6 +26,7 @@ class Dolar extends React.Component {
     render() {
         return (
             <div className='royal'>
+                 <Header2/>
                 <div className='royalimg'>
                     <img src={this.state.rayan.Image} alt="img" class="royalimg" />
                     <div class="royalinfo">

@@ -5,6 +5,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import './ch.css'
 import axios from 'axios';
+import Header2 from '../Header2/header2';
+// import Logout from '../logout/logout';
 class Ch extends React.Component {
     state = {
         rayan: []
@@ -25,6 +27,8 @@ class Ch extends React.Component {
     render() {
         return (
             <div className='royal'>
+                <Header2 />
+                {/* <Logout /> */}
                 <div className='royalimg'>
                     <img src={this.state.rayan.Image} alt="img" class="royalimg" />
                     <div class="royalinfo">

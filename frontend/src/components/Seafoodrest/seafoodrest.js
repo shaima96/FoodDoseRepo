@@ -1,10 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './seafoodrest.css'
-
+import Header2 from '../Header2/header2';
+import Logout from '../logout/logout';
 function Seafoodrest() {
     return (
         <div class='container'>
+               <Header2/>
+           <Logout/>
             <table align="center">
                 <tr>
                     <td><img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzuGhh4VJuJCQDFdJavcTrHHpwmGGcfcFhUw&usqp=CAU"} alt="img" class="imag" /></td>

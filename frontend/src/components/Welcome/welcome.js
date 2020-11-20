@@ -1,15 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import fastfood from "./fastfood.png"
-import healthyfood from "./healthyfood.png"
-import bakries from "./bakries.png"
-import barbecue from "./barbecue.png"
-import desert from "./desert.png"
-import drinks from "./drinks.png"
-import pasta from "./pasta.png"
-import salad from "./salad.png"
-import seafood from "./seafood.png"
-import traditional from "./traditional.png"
+import pasta from './pasta.png'
+import bakerie from './bakerie.png'
+import barbecue from './barbecue.png'
+import dessert from './dessert.png'
+import fastfood from './fastfood.png'
+import healthy from './healthy.png'
+import salad from './salad.png'
+import traditional from './traditinal.png'
 import './welcome.css'
 import Header from '../Header/header';
 
@@ -18,62 +16,62 @@ function Welcome() {
         <div class='container'>
             <Header />
             <table align="center">
-                <tr>
+            <tr>
                     <td><img src={fastfood} alt="img" class="img" onClick={() => {
                         window.location.href = '/fastfoodres'
                     }} /></td>
 
-                    <td><img src={healthyfood} alt="img" class="img" onClick={() => {
-                        window.location.href = '/fastfoodres'
+                    <td><img src={healthy} alt="img" class="img" onClick={() => {
+                        window.location.href = '/healthyresturant'
                     }} /></td>
 
                     <td><img src={barbecue} alt="img" class="img" onClick={() => {
-                        window.location.href = '/fastfoodres'
+                        window.location.href = '/barbecuerest'
                     }} /></td>
 
                     <td><img src={salad} alt="img" class="img" onClick={() => {
-                        window.location.href = '/fastfoodres'
+                        window.location.href = '/saladrest'
                     }} /></td>
 
-                    <td><img src={drinks} alt="img" class="img" onClick={() => {
-                        window.location.href = '/fastfoodres'
+                    <td><img src={"https://i.pinimg.com/564x/43/49/96/434996df2b32803da3920a3a8345434c.jpg"} alt="img" class="img" onClick={() => {
+                        window.location.href = '/drinkrest'
                     }} /></td>
                 </tr>
                 <tr>
                     <th class="text-center" onClick={() => { window.location.href = '/fastfoodres' }}>Fast Food</th>
-                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres' }}>Healthy Food</th>
-                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres' }}>Barbecue</th>
-                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres' }}>Salad</th>
-                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres' }}>Drinks</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/healthyresturant' }}>Healthy Food</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/barbecuerest' }}>Barbecue</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/saladrest' }}>Salad</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/drinkrest' }}>Drinks</th>
                 </tr>
                 <tr></tr>
                 <tr>
-                    <td><img src={bakries} alt="img" class="img" onClick={() => {
-                        window.location.href = '/fastfoodres'
+                    <td><img src={bakerie} alt="img" class="img" onClick={() => {
+                        window.location.href = '/bakeriesrest'
                     }} /></td>
 
                     <td><img src={traditional} alt="img" class="img" onClick={() => {
-                        window.location.href = '/fastfoodres'
+                        window.location.href = '/traditionalrest'
                     }} /></td>
 
                     <td><img src={pasta} alt="img" class="img" onClick={() => {
-                        window.location.href = '/fastfoodres'
+                        window.location.href = '/pastarest'
                     }} /></td>
 
-                    <td><img src={desert} alt="img" class="img" onClick={() => {
-                        window.location.href = '/fastfoodres'
+                    <td><img src={dessert} alt="img" class="img" onClick={() => {
+                        window.location.href = '/dessertrest'
                     }} /></td>
 
-                    <td><img src={seafood} alt="img" class="img" onClick={() => {
-                        window.location.href = '/fastfoodres'
+                    <td><img src={"https://i.pinimg.com/564x/ce/a6/37/cea6373348f019f1b4f8a2f047d70f6e.jpg"} alt="img" class="img" onClick={() => {
+                        window.location.href = '/seafoodrest'
                     }} /></td>
                 </tr>
                 <tr>
-                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres' }}>Bakeries</th>
-                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres' }}>Traditional Food</th>
-                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres' }}>Pasta</th>
-                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres' }}>Dessert</th>
-                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres' }}>Sea Food </th>
+                    <th class="text-center" onClick={() => { window.location.href = '/bakeriesrest' }}>Bakeries</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/traditionalrest' }}>Traditional Food</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/pastarest' }}>Pasta</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/dessertrest' }}>Dessert</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/seafoodrest' }}>Sea Food </th>
                 </tr>
             </table>
 

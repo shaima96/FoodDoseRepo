@@ -1,13 +1,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './traditionalrest.css'
-
+import Header2 from '../Header2/header2';
+import Logout from '../logout/logout';
 
 function Traditionalrest() {
 
 
     return (
         <div class='container'>
+               <Header2/>
+           <Logout/>
             <table align="center">
                 <tr>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-9/p960x960/79934539_1284946271698544_8883810827216355328_o.jpg?_nc_cat=111&ccb=2&_nc_sid=85a577&_nc_ohc=LKSg9W6DZyEAX-QXezl&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=d1a4f0f2060e8a4aaa8b0847fa6c69fe&oe=5FD9C929"} alt="img" class="imag" /></td>
