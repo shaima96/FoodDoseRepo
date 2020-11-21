@@ -3,12 +3,13 @@
   }
   .royal{
     position: fixed;
+
 }
 
 
 .royalimg {
     border: none;
-    border-radius: 15px;
+    border-radius: 15px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
     width: 550px;
     height: 350px;
     opacity: 2;
@@ -23,9 +24,9 @@
 
 .royalinfo {
 float: left;
-margin-left: 65%;
-margin-top: -25%;
-position: fixed;  
+margin-left: 55%;
+margin-bottom:50%;
+position: absolute;  
 }
 
 .royalsocial {

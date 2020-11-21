@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import './rayan.css'
+import './qcandy.css'
 import axios from 'axios';
 import Header2 from '../Header2/header2';
 // import Logout from '../logout/logout';
-class Rayan extends React.Component {
+class Qcandy extends React.Component {
     state = {
         rayan: []
     };
@@ -18,7 +18,7 @@ class Rayan extends React.Component {
         axios.get(`http://localhost:5000/fooddose/fastfoodres/royal/${id}`)
             .then(fastfoodres => {
                 this.setState({
-                    rayan: fastfoodres.data[1]
+                    rayan: fastfoodres.data[45]
                 });
                 console.log(this.state.rayan)
             })
@@ -31,21 +31,21 @@ class Rayan extends React.Component {
                 {/* <Logout /> */}
                 <div className='royalimg'>
                     <img src={this.state.rayan.Image} alt="img" class="royalimg" />
-                </div>
-                <div class="royalinfo">
-                    <h1>Contact Details</h1>
-                    <h2>Address: {this.state.rayan.Address}</h2>
-                    <h3>Phone: {this.state.rayan.Phone}</h3>
-                </div>
+                    <div class="royalinfo">
+                        <h1>Contact Details</h1>
+                        <h2>Address: {this.state.rayan.Address}</h2>
+                        <h3>Phone: {this.state.rayan.Phone}</h3>
+                    </div>
 
-                <div class="royalsocial">
-                    <a href="https://www.facebook.com/" ><FacebookIcon style={{ color: "white", fontSize: "xx-large" }} stroke={"black"} stroke-width={2} /></a>
-                    <a href="https://www.instagram.com/" ><InstagramIcon style={{ color: "black", fontSize: "xx-large" }} /></a>
-                    <a href="https://www.twitter.com/" ><TwitterIcon style={{ color: "white", fontSize: "xx-large" }} stroke={"black"} stroke-width={2} /></a>
+                    <div class="royalsocial">
+                        <a href="https://www.facebook.com/" ><FacebookIcon style={{ color: "white", fontSize: "xx-large" }} stroke={"black"} stroke-width={2} /></a>
+                        <a href="https://www.instagram.com/" ><InstagramIcon style={{ color: "black", fontSize: "xx-large" }} /></a>
+                        <a href="https://www.twitter.com/" ><TwitterIcon style={{ color: "white", fontSize: "xx-large" }} stroke={"black"} stroke-width={2} /></a>
+                    </div>
                 </div>
             </div >
         )
     }
 }
 
-export default Rayan;
+export default Qcandy;
