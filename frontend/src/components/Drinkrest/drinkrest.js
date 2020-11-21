@@ -27,18 +27,16 @@ function Drinkrest() {
                 <tr>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/s206x206/119897079_619085555454701_638892154095158482_o.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=JgEQZoj7hvUAX84ylAp&_nc_ht=scontent.fjrs4-1.fna&tp=7&oh=a8311ab4869c25b8214195cab12d0c8a&oe=5FDA1FB9"} alt="img" class="imag" /></td>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-9/s960x960/81245958_2595977807178056_2046062887272710144_o.jpg?_nc_cat=108&ccb=2&_nc_sid=dd9801&_nc_ohc=aggEp5jOLGAAX_UbJwU&_nc_ht=scontent.fjrs4-1.fna&tp=7&oh=99f7fa680685a1122458c7e363984e00&oe=5FDB1D75"} alt="img" class="imag" /></td>
-                    <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/29541784_1949322555142914_5542376996732549593_n.jpg?_nc_cat=110&ccb=2&_nc_sid=174925&_nc_ohc=AvVhR-6S2E8AX9rLSBb&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=1002ecd5cae668a1b0fdba49d76fdedb&oe=5FDB2966"} alt="img" class="imag" /></td>
-                    <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-9/14523124_1205210356205886_27941380144051654_n.jpg?_nc_cat=100&ccb=2&_nc_sid=7aed08&_nc_ohc=FgL4HyDuUj8AX8rEaBQ&_nc_ht=scontent.fjrs4-1.fna&oh=1247cb83d9bbd4469c40e10756e6c9a1&oe=5FDC0134"} alt="img" class="imag" onClick={() => {
-                        window.location.href = '/fastfoodres/royal'
-                    }} /></td>
-                    <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/101798033_106200681125927_5932896685427523584_n.jpg?_nc_cat=108&ccb=2&_nc_sid=174925&_nc_ohc=qhkq6QAKCa8AX-MCJPH&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=c5c01f252e5a764e086d408ebe60b845&oe=5FDD0614"} alt="img" class="imag" /></td>
+                    <td onClick={() => { window.location.href = '/fastfoodres/salad/jdfhjksdjk56515645sdf6' }}><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/29541784_1949322555142914_5542376996732549593_n.jpg?_nc_cat=110&ccb=2&_nc_sid=174925&_nc_ohc=AvVhR-6S2E8AX9rLSBb&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=1002ecd5cae668a1b0fdba49d76fdedb&oe=5FDB2966"} alt="img" class="imag" /></td>
+                    <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-9/14523124_1205210356205886_27941380144051654_n.jpg?_nc_cat=100&ccb=2&_nc_sid=7aed08&_nc_ohc=FgL4HyDuUj8AX8rEaBQ&_nc_ht=scontent.fjrs4-1.fna&oh=1247cb83d9bbd4469c40e10756e6c9a1&oe=5FDC0134"} alt="img" class="imag"/></td>
+                    <td onClick={() => { window.location.href = '/fastfoodres/salad/fpjefwpkf54e657e564r8' }}><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/101798033_106200681125927_5932896685427523584_n.jpg?_nc_cat=108&ccb=2&_nc_sid=174925&_nc_ohc=qhkq6QAKCa8AX-MCJPH&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=c5c01f252e5a764e086d408ebe60b845&oe=5FDD0614"} alt="img" class="imag" /></td>
                 </tr>
                 <tr>
                     <th class="text-center">Sara Cafee</th>
                     <th class="text-center">Cocktail Nablus</th>
-                    <th class="text-center">Hawana cafe</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres/salad/jdfhjksdjk56515645sdf6' }}>Hawana cafe</th>
                     <th class="text-center" onClick={() => { window.location.href = '/fastfoodres/royal' }}>Fayrouz cafe</th>
-                    <th class="text-center">Villa cafe</th>
+                    <th class="text-center" onClick={() => { window.location.href = '/fastfoodres/salad/fpjefwpkf54e657e564r8' }}>Villa cafe</th>
                 </tr>
             </table>
 

@@ -37,6 +37,11 @@ import Ward from "../src/components/Ward/ward.js"
 import Talet from "../src/components/Talet/talet.js"
 import ALQuds from "../src/components/ALQuds/ALQuds.js"
 import OrientHouse from "../src/components/OrientHouse/OrientHouse.js"
+import Roza from "../src/components/Roza/roza.js"
+import Hebronsky from "../src/components/HebronSky/hebronsky.js"
+import Queenplaza from "../src/components/QueenPlaza/queenplaza.js"
+import Hawana from "../src/components/Hawana/Hawana.js"
+import Villa from "../src/components/Villa/villa.js"
 class App extends Component {
     // constructor(props) {
     //     super(props);
@@ -77,6 +82,13 @@ class App extends Component {
                         <Route path='/fastfoodres/helth/erokglre5454fefwe54548' exact component={() => <ALQuds />} />
                         <Route path='/fastfoodres/helth/lkdfmkl544xc54d87a3c56' exact component={() => <OrientHouse />} />
                         <Route path='/saladrest' exact component={() => <Saladrest />} />
+                        <Route path='/fastfoodres/salad/jooj5649fd4sdjjngdf555' exact component={() => <Roza />} />
+                        <Route path='/fastfoodres/salad/fklmefkmrm65f45sf456sd' exact component={() => <Hebronsky />} />
+                        <Route path='/fastfoodres/salad/lkflkne5ds4fs5df4a556d' exact component={() => <Queenplaza />} />
+                        <Route path='/fastfoodres/salad/jdfhjksdjk56515645sdf6' exact component={() => <Hawana />} />
+                        < Route path='/fastfoodres/salad/fpjefwpkf54e657e564r8' exact component={() => <Villa />} />
+
+
                         <Route path='/drinkrest' exact component={() => <Drinkrest />} />
                         <Route path='/bakeriesrest' exact component={() => <Bakeriesrest />} />
                         <Route path='/traditionalrest' exact component={() => <Traditionalrest />} />
