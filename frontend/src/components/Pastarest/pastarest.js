@@ -7,9 +7,9 @@ import Logout from '../logout/logout';
 function Pastarest() {
     return (
         <div class='container'>
-            <Header2/>
-           <Logout/>
-            <table align="center">
+            <Header2 />
+            <Logout />
+            <table class='pasta' align="center">
                 <tr>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/80812782_1018300865184215_2238701301598781440_o.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=c-OIK0PxBKoAX9dAG72&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=99765885c0db6057cbcb2b91386ad1c2&oe=5FDA662A"} alt="img" class="imag" /></td>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-9/31509976_182376465741164_8266230835410108416_n.png?_nc_cat=102&ccb=2&_nc_sid=85a577&_nc_ohc=sXlw03gLjaEAX9W3hu8&_nc_ht=scontent.fjrs4-1.fna&oh=aaa62f5c38a3f02dfb3f88d9cff17dd2&oe=5FDAF16E"} alt="img" class="imag" /></td>

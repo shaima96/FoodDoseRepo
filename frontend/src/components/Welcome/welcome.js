@@ -15,8 +15,8 @@ function Welcome() {
     return (
         <div class='container'>
             <Header />
-            <table align="center">
-            <tr>
+            <table class='welcome' align="center">
+                <tr>
                     <td><img src={fastfood} alt="img" class="img" onClick={() => {
                         window.location.href = '/fastfoodres'
                     }} /></td>

@@ -9,9 +9,9 @@ function Traditionalrest() {
 
     return (
         <div class='container'>
-               <Header2/>
-           <Logout/>
-            <table align="center">
+            <Header2 />
+            <Logout />
+            <table class='traditional' align="center">
                 <tr>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-9/p960x960/79934539_1284946271698544_8883810827216355328_o.jpg?_nc_cat=111&ccb=2&_nc_sid=85a577&_nc_ohc=LKSg9W6DZyEAX-QXezl&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=d1a4f0f2060e8a4aaa8b0847fa6c69fe&oe=5FD9C929"} alt="img" class="imag" /></td>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t31.0-0/c155.0.206.206a/p206x206/19143309_1814294695550690_1206479028125246372_o.png?_nc_cat=103&ccb=2&_nc_sid=19026a&_nc_ohc=Ye8YDVUKM6YAX92Apz6&_nc_oc=AQnGhUxPo0eK_tcq-xvkvAV7UyLEpCopgnXrYiLkO3XER5OwOyJr64KbPzEhtpW8gkQ&_nc_ht=scontent.fjrs4-1.fna&oh=90c2512b836a4c5d490d26dccc51b333&oe=5FDA07A5"} alt="img" class="imag" /></td>

@@ -19,8 +19,8 @@ function Home() {
         <div class='container'>
             <Title />
             <Logout />
-       
-            <table align="center">
+
+            <table class='home' align="center">
                 <tr>
                     <td><img src={fastfood} alt="img" class="img" onClick={() => {
                         window.location.href = '/fastfoodres'

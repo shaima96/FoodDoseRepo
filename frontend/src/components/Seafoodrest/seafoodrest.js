@@ -6,9 +6,9 @@ import Logout from '../logout/logout';
 function Seafoodrest() {
     return (
         <div class='container'>
-               <Header2/>
-           <Logout/>
-            <table align="center">
+            <Header2 />
+            <Logout />
+            <table class='sea' align="center">
                 <tr>
                     <td><img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzuGhh4VJuJCQDFdJavcTrHHpwmGGcfcFhUw&usqp=CAU"} alt="img" class="imag" /></td>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/18268430_689348107933048_7438000805401766736_n.jpg?_nc_cat=100&ccb=2&_nc_sid=174925&_nc_ohc=Pu3PDBlawHcAX-065Cp&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=17e097a6f1954699babddadfa9c0edc2&oe=5FDCD2DA"} alt="img" class="imag" /></td>

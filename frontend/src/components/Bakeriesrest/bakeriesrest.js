@@ -7,9 +7,9 @@ import Logout from '../logout/logout';
 function Bakeriesrest() {
     return (
         <div class='container'>
-            <Header2/>
-           <Logout/>
-            <table align="center">
+            <Header2 />
+            <Logout />
+            <table class='bakerie' align="center">
                 <tr>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t31.0-8/p960x960/22254677_1502323843195017_569180221215907570_o.png?_nc_cat=104&ccb=2&_nc_sid=85a577&_nc_ohc=MQe4Am8KfRYAX-pFWen&_nc_ht=scontent.fjrs4-1.fna&oh=2766dcdd77fce775faecd1ead62c6d62&oe=5FDB1DA6"} alt="img" class="imag" /></td>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-9/73370719_3068634719816821_845807222406512640_n.jpg?_nc_cat=100&ccb=2&_nc_sid=85a577&_nc_ohc=vAlDw9S5j74AX-KNW5h&_nc_ht=scontent.fjrs4-1.fna&oh=cdf8a2f7f1ce5cb07018a487386660a4&oe=5FD97AFE"} alt="img" class="imag" /></td>

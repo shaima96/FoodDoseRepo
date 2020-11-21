@@ -7,9 +7,9 @@ import Logout from '../logout/logout';
 function Fastresturant() {
     return (
         <div class='container'>
-           <Header2/>
-           <Logout/>
-            <table align="center">
+            <Header2 />
+            <Logout />
+            <table class='fast' align="center">
                 <tr>
                     <td onClick={() => { window.location.href = '/fastfoodres/royal/5fb4cc6bed785524445dfksu' }} ><img src={"https://cdn.slidesharecdn.com/ss_thumbnails/kfc-121029120202-phpapp01-thumbnail-4.jpg?cb=1351512627"} alt="img" class="imag" /></td>
                     <td onClick={() => { window.location.href = '/fastfoodres/royal/5fb4cc6bed78555451dsihao' }}><img src={"https://yellowpages.com.ps/images/companies/logos/15344122941761439089-200x200.jpg?token=554116b0bc00c391b8f788eba416677f"} alt="img" class="imag" /></td>

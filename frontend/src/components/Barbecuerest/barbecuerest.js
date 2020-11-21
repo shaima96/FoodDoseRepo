@@ -8,7 +8,7 @@ function Barbecuerest() {
         <div class='container'>
             <Header2 />
             <Logout />
-            <table align="center">
+            <table class='barbecue' align="center">
                 <tr>
                     <td onClick={() => { window.location.href = '/fastfoodres/royal/jhfgjhgjk4546459654999' }}><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/29495881_1580463318668676_7959416436416315392_n.jpg?_nc_cat=111&ccb=2&_nc_sid=09cbfe&_nc_ohc=tRXvqtpUNoAAX-DVKTs&_nc_oc=AQkHJ0qwy6td_RHdW6H7okAeu-hcKoTv6InzmHQjBXT-Hjzwd1rOW7oruMcJ1lNtUW8&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=bfd26278ea30ea50b63866a3b48d904a&oe=5FDAA998"} alt="img" class="imag" /></td>
                     <td onClick={() => { window.location.href = '/fastfoodres/helth/5456re654fre646q546564' }}><img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrOokOdOdjhi7AsTjTE8-IWBdJGpDmtmMDfw&usqp=CAU"} alt="img" class="imag" /></td>

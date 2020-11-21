@@ -6,9 +6,9 @@ import Logout from '../logout/logout';
 function Dessertrest() {
     return (
         <div class='container'>
-             <Header2/>
-           <Logout/>
-            <table align="center">
+            <Header2 />
+            <Logout />
+            <table class='dessert' align="center">
                 <tr>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/12027759_911004388990235_5037291439232041310_n.jpg?_nc_cat=108&ccb=2&_nc_sid=174925&_nc_ohc=8FoLndN4LeoAX-9tU5B&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=93dbe19234f59f51c1a458d720967d2f&oe=5FD9C2E6"} alt="img" class="imag" /></td>
                     <td><img src={"https://scontent.fjrs4-1.fna.fbcdn.net/v/t1.0-0/p206x206/123078805_3561972170490542_4855966044049904980_n.jpg?_nc_cat=102&ccb=2&_nc_sid=09cbfe&_nc_ohc=n2Quc-TnPNEAX-t2jis&_nc_oc=AQkJEWVR2BtdNT4d7O-lc6VJm8lDhN_2WFHFuUGIgtNTuNUae4vkkobZzpxev6716jE&_nc_ht=scontent.fjrs4-1.fna&tp=6&oh=415a239b329c072a18386b3139ab90f0&oe=5FDC598F"} alt="img" class="imag" /></td>
