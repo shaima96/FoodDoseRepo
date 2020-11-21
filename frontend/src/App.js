@@ -42,6 +42,14 @@ import Hebronsky from "../src/components/HebronSky/hebronsky.js"
 import Queenplaza from "../src/components/QueenPlaza/queenplaza.js"
 import Hawana from "../src/components/Hawana/Hawana.js"
 import Villa from "../src/components/Villa/villa.js"
+import Coffee from "../src/components/CoffeeCorner/coffe.js"
+import Qcandy from "../src/components/Qcandy/qcandy.js" 
+import Nutella from "../src/components/Nutella/nutella.js"
+import Karamello from "../src/components/Karamello/karamello.js"
+import Yasmeen from "../src/components/Yasmeen/yasmeen.js"
+import Sara from "../src/components/Sara/sara.js"
+import Cocktail from "../src/components/Cocktail/cocktail.js"
+import Fayrouz from "../src/components/Fayrouz/fayroz.js"
 class App extends Component {
     // constructor(props) {
     //     super(props);
@@ -87,9 +95,15 @@ class App extends Component {
                         <Route path='/fastfoodres/salad/lkflkne5ds4fs5df4a556d' exact component={() => <Queenplaza />} />
                         <Route path='/fastfoodres/salad/jdfhjksdjk56515645sdf6' exact component={() => <Hawana />} />
                         < Route path='/fastfoodres/salad/fpjefwpkf54e657e564r8' exact component={() => <Villa />} />
-
-
                         <Route path='/drinkrest' exact component={() => <Drinkrest />} />
+                        < Route path='/fastfoodres/drinks/ljlg65r4g94r99894rs99' exact component={() => <Coffee />} />
+                        < Route path='/fastfoodres/drinks/lsdlksdjfkjkjao545477' exact component={() => <Qcandy />} />
+                        < Route path='/fastfoodres/drinks/kdmksd5445sggkejl7g54' exact component={() => <Nutella />} />
+                        < Route path='/fastfoodres/drinks/klfklmweklfmkalaslfm5' exact component={() => <Karamello />} />
+                        < Route path='/fastfoodres/drinks/kkmglw;e65reg6e5rg56r' exact component={() => <Yasmeen />} />
+                        < Route path='/fastfoodres/drinks/nflknr56e8r6f6f2xc668' exact component={() => <Sara />} />
+                        < Route path='/fastfoodres/drinks/jnfdjkndf65h4rt45te88' exact component={() => <Cocktail />} />
+                        < Route path='/fastfoodres/drinks/jfwejhlkfdn5646asdf54' exact component={() => <Fayrouz />} />
                         <Route path='/bakeriesrest' exact component={() => <Bakeriesrest />} />
                         <Route path='/traditionalrest' exact component={() => <Traditionalrest />} />
                         <Route path='/pastarest' exact component={() => <Pastarest />} />
