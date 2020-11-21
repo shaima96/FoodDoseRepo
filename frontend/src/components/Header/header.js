@@ -3,7 +3,6 @@ import './header.css'
 import { styled, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
-import { useHistory } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -24,22 +23,32 @@ const Login = styled(Button)({
     padding: '20px 30px',
 });
 function Header() {
+
     const classes = useStyles();
-    let history = useHistory();
+
+
+
     return (
         <div className={classes.root}>
             <AppBar position="static" class="appbar">
                 <Toolbar>
-                    <Typography variant="h6" className={classes.title} id="fooddose">
+
+                    <Typography variant="h6" className={classes.title} id="fooddose" onClick={() => {
+                        window.location.href = '/'
+                    }} >
                         FoodDose
-                        </Typography>
+                            </Typography>
+
                     <Login onClick={() => {
-                        history.push('/login')
+                        window.location.href = '/login'
                     }} id="login">LogIn</Login>
+
                 </Toolbar>
             </AppBar>
         </div>
     );
+
 }
+
 
 export default Header;

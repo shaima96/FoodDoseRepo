@@ -5,11 +5,12 @@
     font-weight: bold;
     font-family: "Ubuntu";
 }
-/* }
+
 .header{
     display:fixed;
+    position: relative;
    
-} */
+}
 .appbar{
     margin-top: 0;
     background-color: white;

@@ -1,0 +1,17 @@
+#logout{
+    position: relative;
+    top: -60px;
+    font-weight: bold;
+    font-family: "Ubuntu";
+    left: 150px;
+}
+
+.header{
+    display:fixed;
+    position: sticky;
+   
+}
+.appbar{
+    margin-top: 0;
+    background-color: white;
+}

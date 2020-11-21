@@ -1,8 +1,9 @@
 
 .container{
     display: inline;
+    
 }
-table{
+.home{
     border-collapse:separate;
     border-spacing:30px 20px;
     margin-left: auto;
@@ -10,12 +11,17 @@ table{
     position: relative;
     justify-content:center;
     align-items:center;
-}
+    margin-bottom: -30px;
+   }
 .img{
-    opacity: 2;
+    width: 210px;
+    height: 155px;
+    opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
-    }
+    border-radius: 20px;
+    background-color: black;
+   }
     .img:hover  {
      opacity: 0.6;
     }
@@ -25,6 +31,9 @@ th {
     font-style: normal;
     font-size: 20px;
 }
+th:hover  {
+    opacity: 0.4;
+   }
 
 
     

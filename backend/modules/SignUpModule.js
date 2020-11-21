@@ -1,8 +1,27 @@
 const mongoose = require('mongoose');
+
+
 const userSchema = new mongoose.Schema({
-    // UserID: { type: Number, unique: true },
-    UserName: { type: String, required:true },
-    Password: { type: String, required:true },
-    Email: { type: String, required:true ,unique: true}
+  UserName: { type: String, required: [true, 'Please enter your name'] },
+  Password: {
+    type: String, required: [true, 'Please enter your password'],
+    minlength: [6, 'Minimum password length is 6 characters']
+
+  },
+  Email: {
+    type: String, required: [true, 'Please enter your email']
+  }
 })
-module.exports=mongoose.model('usertable',userSchema);
+
+
+
+
+
+
+
+
+const User = mongoose.model('usertable', userSchema);
+
+
+module.exports.User = User;
+
