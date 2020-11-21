@@ -26,7 +26,8 @@ It is an app that allows the user to find a certain meal and the restaurant that
 
 # DataBase Schema
 
-![food (2)](https://user-images.githubusercontent.com/69960121/99179771-62d1ef80-2729-11eb-9cec-c6926f4df466.png)
+![Food3](https://user-images.githubusercontent.com/37650536/99709140-77a2e000-2aa7-11eb-89d9-8ae4612af358.png)
+
 
 
 # Structure
