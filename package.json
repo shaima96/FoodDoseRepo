@@ -1,0 +1,26 @@
+{
+  "name": "fooddoserepo",
+  "version": "1.0.0",
+  "description": "It is an app that allows the user to find a certain meal and the restaurant that offers this meal and give users more details about the restaurant.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd frontend && npm run build",
+    "client": "cd frontend && npm run start",
+    "server": "nodemon backend/server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server \" \"npm run client\"",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaima96/FoodDoseRepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaima96/FoodDoseRepo/issues"
+  },
+  "homepage": "https://github.com/shaima96/FoodDoseRepo#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
