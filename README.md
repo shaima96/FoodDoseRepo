@@ -18,7 +18,7 @@ It is an app that allows the user to find a certain meal and the restaurant that
 
 * Front-End : React 
 * Back-End : nodejs ,express, express route.
-* DataBase : MongogDB
+* DataBase : MongoDB
 * Deployment : Heroku 
 * Authentication : JWT
 * Design : Material UI
